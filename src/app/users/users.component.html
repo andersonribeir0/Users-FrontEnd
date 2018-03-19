@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Users List</h1>
+  <table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Document</th>
+        <th>Email</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.Name }}</td>
+        <td>{{ user.Document }}</td>
+        <td>{{ user.Email }}</td>
+        <td>{{ user.Address }}</td>
+        <td><button type="button" class="btn btn-primary btn-sm" routerLink="users/edit" routerLinkActive="active">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
